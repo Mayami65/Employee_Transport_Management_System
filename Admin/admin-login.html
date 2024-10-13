@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Employee Transport Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/admin-login.css"> 
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="/images/logo2.png" alt="Logo" width="90" height="90" class="d-inline-block align-top">
+        <a class="navbar-brand" href="#">TransitEase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    </nav>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Admin Login</h4>
+                </div>
+                <div class="card-body">
+                    <form id="adminLoginForm">
+                        <div class="form-group">
+                            <label for="adminUsername">Username:</label>
+                            <input type="text" class="form-control" id="adminUsername" name="adminUsername" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="adminPassword">Password:</label>
+                            <input type="password" class="form-control" id="adminPassword" name="adminPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/js/admin-login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Time Slot Management - Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/time.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="/images/logo2.png" alt="Logo" width="90" height="90" class="d-inline-block align-top">
+
+        <a class="navbar-brand" href="#">TransitEase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/html/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Time Slot Management Page -->
+    <div class="card">
+        <div class="card-body">
+            <a href="/Admin/dashboard.html" class="btn btn-secondary back-button">&#8592; Back to Admin Dashboard</a>
+
+            <!-- Display existing time slots -->
+            <h3>Manage Time Slots</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Time Slot ID</th>
+                        <th scope="col">Start Time</th>
+                        <th scope="col">End Time</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="timeSlotList">
+                    <!-- Time slots will be dynamically added here -->
+                </tbody>
+            </table>
+
+            <!-- Add new time slot form -->
+            <h3>Add New Time Slot</h3>
+            <form id="addTimeSlotForm">
+                <div class="form-row align-items-end">
+                    <div class="form-group col-md-4">
+                        <label for="startTime">Start Time</label>
+                        <input type="time" class="form-control" id="startTime" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="endTime">End Time</label>
+                        <input type="time" class="form-control" id="endTime" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <button type="submit" class="btn btn-success btn-block">Add Time Slot</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pick-up and Drop-off Management -->
+    <div class="mt-3">
+        <h4>Pick-up and Drop-off Management</h4>
+        <!-- Add form for pick-up and drop-off management -->
+        <form>
+            <div class="form-group">
+                <label for="location">Select Location:</label>
+                <select class="form-control" id="location" required>
+                    <option value="">Select Location</option>
+                    <option value="location1">Location 1</option>
+                    <option value="location2">Location 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="timeSlots">Set Time Slots:</label>
+                <input type="text" class="form-control" id="timeSlots" placeholder="Enter time slots" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- Script for Time Slot Management -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/time-slot.js"></script>
+</body>
+</html>

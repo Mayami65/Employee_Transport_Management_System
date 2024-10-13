@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Employee Transport Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Employee Transport System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <!-- Contact Form -->
+        <form>
+            <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Your Email</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <input type="text" class="form-control" id="contactSubject" placeholder="Your Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Team Members Section -->
+        <h2>Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="/images/customer.jpeg" alt="Team Member 1">
+                    <h4>Lisa Otabil</h4>
+                    <p>Customer Support</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="/images/tech support.jpeg" alt="Team Member 2">
+                    <h4>Jane Smith</h4>
+                    <p>Technical Support</p>
+                    <p>Email: jane.smith@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

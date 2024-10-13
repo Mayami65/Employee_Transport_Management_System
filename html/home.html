@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Transport Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <img src="/images/logo.png" alt="Logo" width="90" height="90" class="d-inline-block align-top">
+        <a class="navbar-brand" href="#">TransitEase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1 class="display-4">Efficient Employee Transport Management</h1>
+            <p class="lead">Streamline your organization's pick-up and drop-off services with our innovative solution.</p>
+
+            <a class="btn btn-primary btn-lg" href="login.html">Get Started</a>
+
+        </div>
+    </div>
+
+    <div id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="/images/driver.jpg" alt="add drivers">
+                        <div class="card-body">
+                            <h4 class="card-title">Add Drivers</h4>
+                            <p class="card-text">
+                                Effortlessly integrate new drivers into your transportation system, enhancing service deployment and operational adaptability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="/images/vehicle.jpeg" alt="add vehicles">
+                        <div class="card-body">
+                            <h4 class="card-title">Add Vehicles</h4>
+                            <p class="card-text">Efficiently assign vehicles to employees for streamlined transport services, enhancing operational effectiveness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="/images/bookings.jpeg" alt="bookings">
+                        <div class="card-body">
+                            <h4 class="card-title">Manage Bookings</h4>
+                            <p class="card-text">Simplify employee booking management; effortlessly view and oversee bookings for seamless scheduling and coordination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to Optimize Your Transportation System?</h2>
+            <p>Join us today and experience hassle-free pick-up and drop-off management.</p>
+            <a class="btn btn-light btn-lg" href="#" role="button" data-toggle="modal"
+                data-target="#contactModal">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div class="modal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Form -->
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="John Doe"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="contactEmail">Your Email</label>
+                                <input type="email" class="form-control" id="contactEmail"
+                                    placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" placeholder="Your Subject"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="4"
+                                placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <!-- End Contact Form -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
